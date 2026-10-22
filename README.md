@@ -14,10 +14,13 @@
 This repository provides the complete source tree, device target configuration, and porting patches for **UN1CA 4.0 (One UI 8.5)** tailored specifically for the **Samsung Galaxy M51** (Qualcomm Snapdragon 730G / `sm7150`).
 
 - **ROM Version:** UN1CA 4.0.0-m51
-- **One UI Version:** One UI 8.5 (based on `r11quew` Galaxy S23 FE architecture)
-- **Target Device:** Samsung Galaxy M51 (`SM-M515F` / `m51`)
-- **Kernel:** LostPrime Kernel with KernelSU out-of-the-box
-- **Status:** Stable
+- **One UI Version:** One UI 8.5 (Android 16 / SDK 36)
+- **Source Firmware:** Samsung Galaxy S23 FE (`SM-S711U1` / `r11quew` / `BP4A.251205.006.S711U1UES8FZF2`)
+- **Target Vendor:** Samsung Galaxy M51 (`SM-M515F` / `m51nsxx` / `M515FXXS6DXE4`)
+- **Kernel:** LostPrime Kernel (`4.14.357-openela-LostPrime-g54d444ba7c65`) with KernelSU
+- **Official Package:** `UN1CA_4.0.0_OneUI8.5_m51-signed.zip`
+- **Official SHA256:** `be5fb6051ae9c94eef0054be59e00b87922b3bbbc439ad686298167660946a7b`
+- **Status:** Verified 1:1 Stable Release
 
 ---
 
