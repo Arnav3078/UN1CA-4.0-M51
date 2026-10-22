@@ -43,7 +43,7 @@ This project stands on the shoulders of giants. Full credit and heartfelt apprec
   - Original **Creator, Project Architect & Lead Developer of UN1CA**.
   - Architect of the UN1CA modular patch system, build system, and One UI porting ecosystem.
 - **[Mehedi H Joy (@mehedihjoy0)](https://github.com/mehedihjoy0)**:
-  - Maintainer of **[UN1CA-SM7150](https://github.com/mehedihjoy0/UN1CA-SM7150)** and **[SpiderGirl-OS](https://github.com/mehedihjoy0/SpiderGirl-OS)**.
+  - Maintainer of **[UN1CA-SM7150](https://github.com/mehedihjoy0/UN1CA-SM7150)** 
   - Initial Galaxy M51 (`target/m51`) bring-up, Snapdragon 7150 platform hardware adaptations, audio/camera blobs, and One UI 8.x/8.5 compatibility patches.
 
 ### 🤝 Additional Contributions:
