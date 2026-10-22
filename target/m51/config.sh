@@ -1,4 +1,6 @@
 # Copyright (c) 2025 Salvo Giangreco
+# Copyright (c) 2025 Mehedi H Joy
+# Copyright (c) 2026 Arnav
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # Device configuration file for Galaxy M51 (m51)

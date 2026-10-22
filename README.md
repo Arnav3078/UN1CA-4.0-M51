@@ -2,107 +2,96 @@
   <img loading="lazy" src="readme-res/banner.png"/>
 </h1>
 <p align="center">
-  <a href="https://github.com/salvogiangri/UN1CA/blob/sixteen/LICENSE"><img loading="lazy" src="https://img.shields.io/github/license/salvogiangri/UN1CA?style=for-the-badge&logo=github"/></a>
-  <a href="https://github.com/salvogiangri/UN1CA/commits/sixteen"><img loading="lazy" src="https://img.shields.io/github/last-commit/salvogiangri/UN1CA/sixteen?style=for-the-badge"/></a>
-  <a href="https://github.com/salvogiangri/UN1CA/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/salvogiangri/UN1CA?style=for-the-badge"/></a>
-  <a href="https://github.com/salvogiangri/UN1CA/actions/workflows/ci.yml"><img loading="lazy" src="https://img.shields.io/github/actions/workflow/status/salvogiangri/UN1CA/ci.yml?style=for-the-badge"/></a>
-  <a href="https://crowdin.com/project/UN1CA"><img loading="lazy" src="https://img.shields.io/badge/Crowdin-263238?style=for-the-badge&logo=crowdin"/></a>
+  <a href="https://github.com/Arnav3078/UN1CA-4.0-M51/blob/oneui-8.5/LICENSE"><img loading="lazy" src="https://img.shields.io/github/license/Arnav3078/UN1CA-4.0-M51?style=for-the-badge&logo=github"/></a>
+  <a href="https://github.com/Arnav3078/UN1CA-4.0-M51/commits/oneui-8.5"><img loading="lazy" src="https://img.shields.io/github/last-commit/Arnav3078/UN1CA-4.0-M51/oneui-8.5?style=for-the-badge"/></a>
+  <a href="https://github.com/Arnav3078/UN1CA-4.0-M51/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/Arnav3078/UN1CA-4.0-M51?style=for-the-badge"/></a>
 </p>
-<p align="center">UN1CA <i>(/ˈu.ni.ka/)</i> is a work-in-progress custom firmware for Samsung Galaxy devices.</p>
+<p align="center"><b>UN1CA 4.0</b> — One UI 8.5 Custom Firmware for <b>Samsung Galaxy M51 (SM-M515F / m51)</b></p>
 
-<p align="center">
-  <a href="https://github.com/salvogiangri/UN1CA/discussions">🚀 Discussions</a>
-  •
-  <a href="https://t.me/unicarom">💬 Telegram</a>
-</p>
+---
 
-# What is UN1CA?
-UN1CA is a work-in-progress custom firmware for Samsung Galaxy devices, designed to provide a refined, optimized and more rich One UI experience.
-It is based on the latest and greatest iteration of Samsung's UX and it integrates numerous improvements, optimizations and exclusive features.
+## 📱 About This Release
+This repository provides the complete source tree, device target configuration, and porting patches for **UN1CA 4.0 (One UI 8.5)** tailored specifically for the **Samsung Galaxy M51** (Qualcomm Snapdragon 730G / `sm7150`).
 
-The UN1CA build system automatically builds the required tools, downloads and extracts firmware components, applies the required patches and generates a flashable zip for the target device.
+- **ROM Version:** UN1CA 4.0.0-m51
+- **One UI Version:** One UI 8.5 (based on `r11quew` Galaxy S23 FE architecture)
+- **Target Device:** Samsung Galaxy M51 (`SM-M515F` / `m51`)
+- **Kernel:** LostPrime Kernel with KernelSU out-of-the-box
+- **Status:** Stable
 
-The goal is to deliver a fast, smooth and modern UX while offering additional tools, modifications and system‑level enhancements tailored for power users.
+---
 
-Any form of contribution, suggestions, bug report or feature request for the project will be welcome.
+## ✨ Features & Device Adaptations
 
-# Features
-### Core features:
-- Based on the latest stable Galaxy S22 firmware
-- EROFS powered
-- Galaxy S25 wallpapers/sounds included
-- Galaxy AI support
-  - Audio eraser
-  - Browsing assist
-  - Call assist
-  - Drawing assist
-  - Interpreter
-  - Note assist
-  - Now brief
-  - Photo assist
-  - Semantic search
-  - Transcript assist
-  - Writing assist
-- High end animations
-- Native/live blur support
-- AOD clock transition support
-- Adaptive color tone support
-- Adaptive refresh rate support
-- Extra brightness support
-- Picture remaster support
-- Object, shadow and reflection eraser support
-- Image clipper support
-- Multi user support
-- Samsung DeX support*
-- Camera privacy toggle support
-- Debloated from useless system services/additional apps
-- Dual Messenger available for all apps
-- Custom FlipFont fonts support
-- Outdoor mode support
-- Auto PIN confirm with 4 digits
-- [BluetoothLibraryPatcher](https://github.com/3arthur6/BluetoothLibraryPatcher) integrated
-- [KnoxPatch](https://github.com/salvogiangri/KnoxPatch) integrated
-- Extra CSC features enabled (Call recording, Hiya, Network speed in status bar, AltZLife)
+### 🛠️ Hardware & Port Fixes for Galaxy M51
+- **Capacitive Side Fingerprint Sensor:** Full side-sensor configuration and position mapping (`google_touch_side,settings=3,navi=1`) with patched `libbauthtzcommon` / `libbauthserver` and framework integration.
+- **Face Unlock:** Fully functional biometrics stack supporting both 2.0 and 3.0 HALs.
+- **Audio & Sound:** Dolby Atmos in-game, SoundAlive custom equalizer, dual speaker / head-tracking audio profiles.
+- **Display & Refresh Rate:** Extra Brightness support, MDNIE hardware tuning, and adaptive refresh rate enhancements.
+- **Camera:** Preserved M51 stock multi-camera feature profiles (`camera-feature.xml` & `media_profiles_vendor.xml`).
+- **Network & Connectivity:** Dual-SIM multisim support, VoLTE, VoWiFi, and high-performance Wi-Fi concurrency.
+- **Kernel:** Pre-integrated with LostPrime Kernel supporting KernelSU for root and module management.
+- **OTA Updates:** Integrated OTA updater configuration tracking [UN1CA-M51-Updates](https://github.com/Arnav3078/UN1CA-M51-Updates).
 
-\* DeX via HDMI not available for devices without USB-C DP support
+---
 
-### UN1CA-exclusive features:
-- Integrated OTA updates app
-- Native/live blur toggle
-- One UI Home animations option
-- Vulkan renderer toggle
-- Key attestation spoof ([TrickyStore](https://github.com/5ec1cff/TrickyStore)) options*
-- Play Integrity Fix integrated
-- Ability to hide installed apps ([Hide My Applist](https://github.com/Dr-TSNG/Hide-My-Applist))
-- Ability to hide developer options
-- Allow app downgrade toggle
-- Allow installing apps with old targetSdk toggle
-- Allow secure screenshot toggle
-- Screenshot/screen recording detection toggle
-- Unlimited backup storage on Google Photos
-- Games FPS unlock toggle
+## 🌟 Upstream & Full Credits
+This project stands on the shoulders of giants. Full credit and heartfelt appreciation go to:
 
-\* Requires a valid keybox
+### 👑 Project Leaders & Upstream Creators:
+- **[Salvo Giangreco (@salvogiangri)](https://github.com/salvogiangri)**:
+  - Original **Creator, Project Architect & Lead Developer of UN1CA**.
+  - Architect of the UN1CA modular patch system, build system, and One UI porting ecosystem.
+- **[Mehedi H Joy (@mehedihjoy0)](https://github.com/mehedihjoy0)**:
+  - Maintainer of **[UN1CA-SM7150](https://github.com/mehedihjoy0/UN1CA-SM7150)** and **[SpiderGirl-OS](https://github.com/mehedihjoy0/SpiderGirl-OS)**.
+  - Initial Galaxy M51 (`target/m51`) bring-up, Snapdragon 7150 platform hardware adaptations, audio/camera blobs, and One UI 8.x/8.5 compatibility patches.
 
-# Licensing
-This project is licensed under the terms of the [GNU General Public License v3.0](LICENSE). External dependencies might be distributed under a different license, such as:
-- [android-tools](https://github.com/nmeum/android-tools), licensed under the [Apache License 2.0](https://github.com/nmeum/android-tools/blob/master/LICENSE)
-- [apktool](https://github.com/iBotPeaches/Apktool), licensed under the [Apache License 2.0](https://github.com/iBotPeaches/Apktool/blob/master/LICENSE.md)
-- [erofs-utils](https://github.com/sekaiacg/erofs-utils/), dual license ([GPL-2.0](https://github.com/sekaiacg/erofs-utils/blob/dev/LICENSES/GPL-2.0), [Apache-2.0](https://github.com/sekaiacg/erofs-utils/blob/dev/LICENSES/Apache-2.0))
-- [img2sdat](https://github.com/xpirt/img2sdat), licensed under the [MIT License](https://github.com/xpirt/img2sdat/blob/master/LICENSE)
-- [platform_build](https://android.googlesource.com/platform/build/) (ext4_utils, f2fs_utils, signapk), licensed under the [Apache License 2.0](https://source.android.com/docs/setup/about/licenses)
+### 🤝 Additional Contributions:
+- **[kurtnettle](https://github.com/kurtnettle)** for the excellent LostPrime Kernel for SM7150 with KernelSU support.
+- **[ShaDisNX255](https://github.com/ShaDisNX255)** for NcX ROM and invaluable community guidance.
+- **[Arnav (@Arnav3078)](https://github.com/Arnav3078)** for UN1CA 4.0 One UI 8.5 stable rebase, side-sensor/face unlock fixes, OTA maintenance, and device trees.
+- The entire UN1CA and Samsung porting community!
 
-# Contributors
-<a href="https://github.com/salvogiangri/UN1CA/graphs/contributors"><img loading="lazy" src="https://contrib.rocks/image?repo=salvogiangri/UN1CA"/></a>
+---
 
-# Credits
-A special thanks goes to the following for their invaluable contributions in no particular order:
-- **[ShaDisNX255](https://github.com/ShaDisNX255)** for his help, time and for his [NcX ROM](https://github.com/ShaDisNX255/NcX_Stock) which inspired this project
-- **[DavidArsene](https://github.com/DavidArsene)** for his help and time
-- **[paulowesll](https://github.com/paulowesll)** for his help and support
-- **[Simon1511](https://github.com/Simon1511)** for his support and some of the device-specific patches
-- **[ananjaser1211](https://github.com/ananjaser1211)** for troubleshooting and his time
-- **[Fede2782](https://github.com/Fede2782)** for his contributions and help with Exynos/MTK support
-- **[iDrinkCoffee](https://github.com/iDrinkCoffee-TG)** and **[RisenID](https://github.com/RisenID)** for their support
-- **[LineageOS Team](https://www.lineageos.org/)** for their original [OTA updater implementation](https://github.com/LineageOS/android_packages_apps_Updater)
-- *All the UN1CA project forks, contributors, testers and users ❤️*
+## 🌿 Repository Branches
+
+| Branch | Description |
+| :--- | :--- |
+| **`oneui-8.5`** | **Active branch** containing One UI 8.5 source code, M51 target configs, tools, and patches. |
+| **`un1ca-4.0`** | Release branch for UN1CA 4.0.0 milestone. |
+| **`sixteen`** | Base UN1CA upstream branch tracking SM7150. |
+
+---
+
+## 🚀 Building from Source
+
+### 1. Prerequisites (Ubuntu / Debian / WSL2)
+```bash
+sudo apt update && sudo apt install -y \
+    git curl wget python3 python3-pip zip unzip openjdk-17-jdk \
+    build-essential libxml2-utils erofs-utils
+```
+
+### 2. Clone the Repository
+```bash
+git clone https://github.com/Arnav3078/UN1CA-4.0-M51.git -b oneui-8.5
+cd UN1CA-4.0-M51
+```
+
+### 3. Initialize Build Environment for Galaxy M51
+```bash
+source buildenv.sh m51
+```
+
+### 4. Build Target Files & Flashable ZIP
+```bash
+./scripts/internal/create_target_files_zip.sh out/m51_target_files.zip
+./scripts/build_flashable_zip.sh out/m51_target_files.zip
+```
+Your flashable ROM package will be produced in the `out/` directory.
+
+---
+
+## 📜 Licensing
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)** - see the [LICENSE](LICENSE) file for details.
