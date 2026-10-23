@@ -28,7 +28,6 @@ This repository provides the complete source tree, device target configuration, 
 
 ### 🛠️ Hardware & Port Fixes for Galaxy M51
 - **Capacitive Side Fingerprint Sensor:** Full side-sensor configuration and position mapping (`google_touch_side,settings=3,navi=1`) with patched `libbauthtzcommon` / `libbauthserver` and framework integration.
-- **Face Unlock:** Fully functional biometrics stack supporting both 2.0 and 3.0 HALs.
 - **Audio & Sound:** Dolby Atmos in-game, SoundAlive custom equalizer, dual speaker / head-tracking audio profiles.
 - **Display & Refresh Rate:** Extra Brightness support, MDNIE hardware tuning, and adaptive refresh rate enhancements.
 - **Camera:** Preserved M51 stock multi-camera feature profiles (`camera-feature.xml` & `media_profiles_vendor.xml`).
